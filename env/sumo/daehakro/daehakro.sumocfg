@@ -1,0 +1,25 @@
+<configuration>
+    <input>
+        <net-file value="daehakro.net.xml"/>
+        <route-files value="daehakro.rou.xml"/>
+        <additional-files value="daehakro.tll.xml,daehakro.stops.xml,daehakro.deco.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="0.5"/>
+    </time>
+    <processing>
+        <time-to-teleport value="300"/>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <ignore-route-errors value="true"/>
+        <pedestrian.model value="striping"/>
+    </processing>
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+    <gui_only>
+        <gui-settings-file value="daehakro.gui.xml"/>
+    </gui_only>
+</configuration>

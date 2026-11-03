@@ -1,0 +1,7 @@
+<viewsettings>
+    <scheme name="real world">
+        <edges laneShowBorders="1" showLinkDecals="1" realisticLinkRules="1" showLinkRules="1" hideConnectors="1"/>
+    </scheme>
+    <viewport zoom="160" x="0" y="560" angle="0"/>
+    <delay value="50"/>
+</viewsettings>

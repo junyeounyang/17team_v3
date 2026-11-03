@@ -1,0 +1,255 @@
+<connections>
+    <connection from="nb_IH_IWJ" to="nb_IWJ_BAY0" fromLane="1" toLane="1" allow="bus" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IH_IWJ" to="nb_IWJ_BAY0" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IH_IWJ" to="nb_IWJ_BAY0" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IH_IWJ" to="nb_IWJ_BAY0" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IWJ_BAY0" to="nb_BAY0_BAY1" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IWJ_BAY0" to="nb_BAY0_BAY1" fromLane="2" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IWJ_BAY0" to="nb_BAY0_BAY1" fromLane="3" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IWJ_BAY0" to="nb_BAY0_BAY1" fromLane="4" toLane="5" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY0_BAY1" to="nb_BAY1_M" fromLane="2" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY0_BAY1" to="nb_BAY1_M" fromLane="3" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY0_BAY1" to="nb_BAY1_M" fromLane="4" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY0_BAY1" to="nb_BAY1_M" fromLane="5" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY1_M" to="nb_M_d427" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY1_M" to="nb_M_d427" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY1_M" to="nb_M_d427" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY1_M" to="nb_M_d427" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_M_d427" to="nb_d427_O" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_M_d427" to="nb_d427_O" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_M_d427" to="nb_d427_O" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_M_d427" to="nb_d427_O" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d427_O" to="nb_O_I" fromLane="1" toLane="1" allow="bus" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d427_O" to="nb_O_I" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d427_O" to="nb_O_I" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d427_O" to="nb_O_I" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_O_I" to="nb_I_H" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_O_I" to="nb_I_H" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_O_I" to="nb_I_H" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_O_I" to="nb_I_H" fromLane="3" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_I_H" to="nb_H_d596" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_I_H" to="nb_H_d596" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_I_H" to="nb_H_d596" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_I_H" to="nb_H_d596" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_H_d596" to="nb_d596_G" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_H_d596" to="nb_d596_G" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_H_d596" to="nb_d596_G" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_H_d596" to="nb_d596_G" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d596_G" to="nb_G_F" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d596_G" to="nb_G_F" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d596_G" to="nb_G_F" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d596_G" to="nb_G_F" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_G_F" to="nb_F_d688" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_G_F" to="nb_F_d688" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_G_F" to="nb_F_d688" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_G_F" to="nb_F_d688" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_F_d688" to="nb_d688_E" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_F_d688" to="nb_d688_E" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_F_d688" to="nb_d688_E" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_F_d688" to="nb_d688_E" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d688_E" to="nb_E_D" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d688_E" to="nb_E_D" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d688_E" to="nb_E_D" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d688_E" to="nb_E_D" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_E_D" to="nb_D_d816" fromLane="1" toLane="1" uncontrolled="true" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_E_D" to="nb_D_d816" fromLane="2" toLane="2" uncontrolled="true" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_E_D" to="nb_D_d816" fromLane="3" toLane="3" uncontrolled="true" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_E_D" to="nb_D_d816" fromLane="4" toLane="4" uncontrolled="true" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_D_d816" to="nb_d816_C_s" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_D_d816" to="nb_d816_C_s" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_D_d816" to="nb_d816_C_s" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_D_d816" to="nb_d816_C_s" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d816_C_s" to="nb_C_s_C" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d816_C_s" to="nb_C_s_C" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d816_C_s" to="nb_C_s_C" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d816_C_s" to="nb_C_s_C" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_s_C" to="nb_C_B" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_s_C" to="nb_C_B" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_s_C" to="nb_C_B" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_s_C" to="nb_C_B" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_B" to="nb_B_UBAY" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_B" to="nb_B_UBAY" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_B" to="nb_B_UBAY" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_B" to="nb_B_UBAY" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_B_UBAY" to="nb_UBAY_A" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_B_UBAY" to="nb_UBAY_A" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_B_UBAY" to="nb_UBAY_A" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_B_UBAY" to="nb_UBAY_A" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_UBAY_A" to="nb_A_RS" fromLane="1" toLane="1" allow="bus" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_UBAY_A" to="nb_A_RS" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_UBAY_A" to="nb_A_RS" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_UBAY_A" to="nb_A_RS" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB2_SB3" to="sb_SB3_IH" fromLane="1" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB2_SB3" to="sb_SB3_IH" fromLane="2" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB2_SB3" to="sb_SB3_IH" fromLane="3" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_M_SB2" to="sb_SB2_SB3" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_M_SB2" to="sb_SB2_SB3" fromLane="1" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_M_SB2" to="sb_SB2_SB3" fromLane="2" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_O_M" to="sb_M_SB2" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_O_M" to="sb_M_SB2" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_I_O" to="sb_O_M" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_I_O" to="sb_O_M" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_H_I" to="sb_I_O" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_H_I" to="sb_I_O" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_F_H" to="sb_H_I" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_F_H" to="sb_H_I" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_E_F" to="sb_F_H" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_E_F" to="sb_F_H" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_D_E" to="sb_E_F" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_D_E" to="sb_E_F" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_C_D" to="sb_D_E" fromLane="1" toLane="1" uncontrolled="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_C_D" to="sb_D_E" fromLane="2" toLane="2" uncontrolled="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_A_C" to="sb_C_D" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_A_C" to="sb_C_D" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_A_C" to="sb_C_D" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_RS_A" to="sb_A_C" fromLane="1" toLane="1" uncontrolled="true" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_RS_A" to="sb_A_C" fromLane="2" toLane="2" uncontrolled="true" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_RS_A" to="sb_A_C" fromLane="3" toLane="3" uncontrolled="true" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_BAY1_M" to="N_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="N_in" to="nb_M_d427" fromLane="1" toLane="2" contPos="0" uncontrolled="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d596_G" to="G_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="G_in" to="nb_G_F" fromLane="1" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_E_D" to="D_out" fromLane="1" toLane="1" contPos="0" uncontrolled="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="D_in" to="nb_D_d816" fromLane="1" toLane="2" contPos="0" uncontrolled="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d816_C_s" to="C_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="C_in" to="nb_C_s_C" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_C_B" to="B_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="B_in" to="nb_B_UBAY" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_UBAY_A" to="A_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="A_in" to="nb_A_RS" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_C_D" to="D_out" fromLane="3" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_C_D" to="nb_D_d816" fromLane="3" toLane="3" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_UBAY_A" to="sb_A_C" fromLane="5" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_d427_O" to="O_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="O_in" to="nb_O_I" fromLane="1" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="O_in" to="sb_O_M" fromLane="2" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_O_I" to="I_out" fromLane="4" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_H_I" to="I_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="I_in" to="sb_I_O" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sz0_out" to="sz1_out" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sz1_in" to="sz0_in" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sz1_out" to="szT_out" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="szT_in" to="sz1_in" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_IH_IWJ" to="sz0_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sz0_in" to="nb_IWJ_BAY0" fromLane="1" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="szT_out" to="sz2_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="szT_out" to="br_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sz2_in" to="szT_in" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sz2_in" to="br_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="br_in" to="szT_in" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="br_in" to="sz2_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in0" to="S_in" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in0" to="S_in" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in0" to="S_in" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in2" to="E_in1" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in2" to="E_in1" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in2" to="E_in1" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in2" to="br_in" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="br_out" to="E_in1" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB3_IH" to="W_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB3_IH" to="S_out" fromLane="2" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB3_IH" to="E_out" fromLane="3" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB3_IH" to="E_out" fromLane="4" toLane="3" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="sb_SB3_IH" to="nb_IH_IWJ" fromLane="4" toLane="3" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in" to="nb_IH_IWJ" fromLane="1" toLane="1" allow="bus" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in" to="E_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in" to="nb_IH_IWJ" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in" to="nb_IH_IWJ" fromLane="2" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in" to="nb_IH_IWJ" fromLane="3" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="S_in" to="W_out" fromLane="3" toLane="3" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="W_in" to="E_out" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="W_in" to="E_out" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="W_in" to="E_out" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="W_in" to="S_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="W_in" to="nb_IH_IWJ" fromLane="3" toLane="4" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in1" to="W_out" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in1" to="W_out" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in1" to="W_out" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in1" to="nb_IH_IWJ" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in1" to="nb_IH_IWJ" fromLane="1" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="E_in1" to="S_out" fromLane="3" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_A_RS" to="dae_nb_in" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_A_RS" to="dae_nb_in" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_A_RS" to="dae_nb_in" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="nb_A_RS" to="dae_nb_in" fromLane="4" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="dae_sb_out" to="sb_RS_A" fromLane="1" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="dae_sb_out" to="sb_RS_A" fromLane="2" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="dae_sb_out" to="sb_RS_A" fromLane="3" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcS1" to="dae_sb_out" fromLane="0" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcS1" to="dae_sb_out" fromLane="1" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcS1" to="arcS2" fromLane="1" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcS1" to="arcS2" fromLane="2" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="dae_nb_in" to="arcE" fromLane="1" toLane="0" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="dae_nb_in" to="arcE" fromLane="2" toLane="1" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="dae_nb_in" to="arcE" fromLane="3" toLane="2" pass="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="dae_nb_in" to="arcE" fromLane="4" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcS2" to="arcE" fromLane="0" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcS2" to="arcE" fromLane="1" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcE" to="arcN1" fromLane="3" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcE" to="arcN1" fromLane="4" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcE" to="NE_out" fromLane="0" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcE" to="NE_out" fromLane="1" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcE" to="NE_out" fromLane="2" toLane="3" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="diagNE" to="NE_out" fromLane="0" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="diagNE" to="NE_out" fromLane="1" toLane="4" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NE_in" to="diagSW" fromLane="3" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NE_in" to="diagSW" fromLane="4" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NE_in" to="diagSW" fromLane="5" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NE_in" to="diagSW" fromLane="6" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NE_in" to="arcN1" fromLane="1" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NE_in" to="arcN1" fromLane="2" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN1" to="arcN2" fromLane="0" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN1" to="arcN2" fromLane="1" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN1" to="arcN2" fromLane="2" toLane="3" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN1" to="NL_out" fromLane="0" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NL_in" to="arcN2" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NL_in" to="arcN2" fromLane="1" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN2" to="NW_out" fromLane="0" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN2" to="NW_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN2" to="arcW1" fromLane="2" toLane="2" uncontrolled="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcN2" to="arcW1" fromLane="3" toLane="3" uncontrolled="true" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NW_in" to="arcW1" fromLane="1" toLane="0" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="NW_in" to="arcW1" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW1" to="arcW1b" fromLane="1" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW1" to="arcW1b" fromLane="2" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW1" to="arcW1b" fromLane="3" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW1b" to="slip1" fromLane="0" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW1b" to="arcW2" fromLane="1" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW1b" to="arcW2" fromLane="2" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW2" to="arcS1" fromLane="0" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="arcW2" to="arcS1" fromLane="1" toLane="2" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="SW_in" to="arcS1" fromLane="1" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="SW_in" to="diagNE" fromLane="2" toLane="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="SW_in" to="diagNE" fromLane="3" toLane="1" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="diagSW" to="SW_out" fromLane="0" toLane="2" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="diagSW" to="SW_out" fromLane="1" toLane="3" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="diagSW" to="SW_out" fromLane="2" toLane="4" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="diagSW" to="SW_out" fromLane="3" toLane="5" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <connection from="slip1" to="SW_out" fromLane="1" toLane="1" contPos="0" changeLeft="emergency" changeRight="emergency"/>
+    <crossing node="M" edges="N_in N_out" priority="true" width="3.5"/>
+    <crossing node="G" edges="G_in G_out" priority="true" width="3.5"/>
+    <crossing node="D" edges="D_in D_out" priority="true" width="3.5"/>
+    <crossing node="C_s" edges="C_in C_out" priority="true" width="3.5"/>
+    <crossing node="B" edges="B_in B_out" priority="true" width="3.5"/>
+    <crossing node="A" edges="A_in A_out" priority="true" width="3.5"/>
+    <crossing node="O" edges="nb_O_I sb_I_O" priority="true" width="3.5"/>
+    <crossing node="O" edges="O_in O_out" priority="true" width="3.5"/>
+    <crossing node="I" edges="I_in I_out" priority="true" width="3.5"/>
+    <crossing node="M" edges="nb_BAY1_M sb_M_SB2" priority="true" width="5.0"/>
+    <crossing node="H" edges="nb_I_H sb_H_I" priority="true" width="5.0"/>
+    <crossing node="F" edges="nb_G_F sb_F_H" priority="true" width="5.0"/>
+    <crossing node="C" edges="nb_C_s_C sb_C_D" priority="true" width="5.0"/>
+    <crossing node="RS" edges="nb_A_RS sb_RS_A" priority="true" width="5.0"/>
+    <crossing node="E" edges="nb_d688_E sb_E_F" priority="true" width="30.0"/>
+    <crossing node="SZ_G" edges="sz0_out sz0_in" priority="true" width="3.5"/>
+    <crossing node="SZ_X" edges="sz1_out sz1_in" priority="true" width="3.5"/>
+    <crossing node="IWJ" edges="sz0_in sz0_out" priority="true" width="3.5"/>
+    <crossing node="IH" edges="nb_IH_IWJ sb_SB3_IH" priority="true" width="5.0"/>
+    <crossing node="IH" edges="E_in1 E_out" priority="true" width="5.0"/>
+    <crossing node="IH" edges="W_in W_out" priority="true" width="5.0"/>
+    <crossing node="IH" edges="S_in S_out" priority="true" width="5.0"/>
+    <crossing node="J_SW" edges="SW_in SW_out" priority="true" width="5.0"/>
+    <crossing node="J_NE" edges="NE_in NE_out" priority="true" width="5.0"/>
+    <crossing node="J_N" edges="NL_in NL_out" priority="true" width="3.5"/>
+    <crossing node="J_NW" edges="NW_in NW_out" priority="true" width="5.0"/>
+</connections>

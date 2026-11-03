@@ -1,0 +1,140 @@
+<additional>
+    <tlLogic id="IH" type="static" programID="daehakro" offset="0">
+        <phase duration="7" state="srrrrssrrrrrrrrrrrGGGGrrrr"/>
+        <phase duration="4" state="srrrrssrrrrrrrrrrrGGGGrrGr"/>
+        <phase duration="8" state="srrrrssrrrrrrrrrrgGGGGrrGr"/>
+        <phase duration="11" state="srrrrssrrrrrrrrrrGGGGGrrrr"/>
+        <phase duration="1" state="srrrrssrrrrrrrrrrGGGGGrrrr"/>
+        <phase duration="3" state="srrrrssrrrrrrrrrrGGGGyrrrr"/>
+        <phase duration="3" state="srrrrssrrrrrrrrrryyyyrrrrr"/>
+        <phase duration="3" state="srrrrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="7" state="srrrrrrrrrrrGGGGGsrrrrrrrr"/>
+        <phase duration="4" state="srrrrrrrrrrrGGGGGsrrrrrGrr"/>
+        <phase duration="2" state="srrrrrrrrrrgGGGGGsrrrrrGrr"/>
+        <phase duration="13" state="srrrrrrrrrrGGGGGGsrrrrrrrr"/>
+        <phase duration="3" state="srrrrrrrrrrGGGGGysrrrrrrrr"/>
+        <phase duration="3" state="srrrrrrrrrryyyyyrsrrrrrrrr"/>
+        <phase duration="3" state="rrrrrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="7" state="rrrrrrrGGGGsrrrrrrrrrrrrrr"/>
+        <phase duration="4" state="rrrrrrrGGGGsrrrrrrrrrrGrrr"/>
+        <phase duration="2" state="rrrrrggGGGGsrrrrrrrrrrGrrr"/>
+        <phase duration="18" state="rrrrrGGGGGGsrrrrrrrrrrrrrr"/>
+        <phase duration="3" state="rrrrrGGGGGysrrrrrrrrrrrrrr"/>
+        <phase duration="3" state="rrrrryyyyyrsrrrrrrrrrrrrrr"/>
+        <phase duration="3" state="rrrrrrrrrrrsrrrrrrrrrrrrrr"/>
+        <phase duration="7" state="rGGGGssrrrrsrrrrrrrrrrrrrr"/>
+        <phase duration="4" state="rGGGGssrrrrsrrrrrrrrrrrrrG"/>
+        <phase duration="2" state="gGGGGssrrrrsrrrrrrrrrrrrrG"/>
+        <phase duration="13" state="GGGGGssrrrrsrrrrrrrrrrrrrr"/>
+        <phase duration="3" state="GGyyyssrrrrsrrrrrrrrrrrrrr"/>
+        <phase duration="3" state="yyrrrssrrrrsrrrrrrrrrrrrrr"/>
+        <phase duration="3" state="rrrrrssrrrrrrrrrrrrrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="M" type="static" programID="daehakro" offset="28">
+        <phase duration="115" state="GGgGGGGGr"/>
+        <phase duration="3" state="yyyyyyyGr"/>
+        <phase duration="2" state="rrrrrrrGr"/>
+        <phase duration="14" state="rrrrrrrGG"/>
+        <phase duration="16" state="rrrrrrrGr"/>
+    </tlLogic>
+    <tlLogic id="H" type="static" programID="daehakro" offset="46">
+        <phase duration="115" state="GGGGGGr"/>
+        <phase duration="3" state="yyyyyyr"/>
+        <phase duration="2" state="rrrrrrr"/>
+        <phase duration="14" state="rrrrrrG"/>
+        <phase duration="16" state="rrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="F" type="static" programID="daehakro" offset="54">
+        <phase duration="115" state="GGGGGGr"/>
+        <phase duration="3" state="yyyyyyr"/>
+        <phase duration="2" state="rrrrrrr"/>
+        <phase duration="14" state="rrrrrrG"/>
+        <phase duration="16" state="rrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="E" type="static" programID="daehakro" offset="62">
+        <phase duration="115" state="GGGGGGr"/>
+        <phase duration="3" state="yyyyyyr"/>
+        <phase duration="2" state="rrrrrrr"/>
+        <phase duration="12" state="rrrrrrG"/>
+        <phase duration="18" state="rrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="C" type="static" programID="daehakro" offset="71">
+        <phase duration="115" state="GGGGGGGr"/>
+        <phase duration="3" state="yyyyyyyr"/>
+        <phase duration="2" state="rrrrrrrr"/>
+        <phase duration="12" state="rrrrrrrG"/>
+        <phase duration="18" state="rrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="D" type="static" programID="daehakro" offset="63">
+        <phase duration="123" state="rrG"/>
+        <phase duration="22" state="ggG"/>
+        <phase duration="3" state="yyG"/>
+        <phase duration="2" state="rrG"/>
+    </tlLogic>
+    <tlLogic id="O" type="static" programID="daehakro" offset="38">
+        <phase duration="83" state="GGrrgGGGGrG"/>
+        <phase duration="6" state="GGsrGGGGGrr"/>
+        <phase duration="3" state="yysryyyyyrr"/>
+        <phase duration="2" state="rrsrrrrrrrr"/>
+        <phase duration="18" state="rrGGsrrrrrr"/>
+        <phase duration="3" state="rryysrrrrrr"/>
+        <phase duration="2" state="rrrrrrrrrrr"/>
+        <phase duration="3" state="rrrrrrrrrrr"/>
+        <phase duration="14" state="rrrrsrrrrGr"/>
+        <phase duration="8" state="rrrrsrrrrrr"/>
+        <phase duration="8" state="rrsrsrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="I" type="static" programID="daehakro" offset="83">
+        <phase duration="120" state="gGGGGGGrrG"/>
+        <phase duration="3" state="yyyyyyyrrr"/>
+        <phase duration="2" state="rrrrrrrrrr"/>
+        <phase duration="20" state="rrrrrrrGGr"/>
+        <phase duration="3" state="rrrrrrryyr"/>
+        <phase duration="2" state="rrrrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="J_NE" type="static" programID="daehakro" offset="0">
+        <phase duration="20" state="rrrrrrGGGGGrrr"/>
+        <phase duration="3" state="rrrrrryyyGGrrr"/>
+        <phase duration="2" state="rrrrrrrrrGGrrr"/>
+        <phase duration="5" state="rrrrrrrrrGGrrG"/>
+        <phase duration="17" state="rrrrrrrrrGGrrr"/>
+        <phase duration="3" state="rrrrrrrrryyrrr"/>
+        <phase duration="2" state="rrrrrrrrrrrrrr"/>
+        <phase duration="18" state="GGGGGGrrrrrGGr"/>
+        <phase duration="3" state="yyyyyyrrrrryyr"/>
+        <phase duration="2" state="rrrrrrrrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="J_SW" type="static" programID="daehakro" offset="62">
+        <phase duration="5" state="rGGrrrrrrrG"/>
+        <phase duration="9" state="gGGrrrrrrrG"/>
+        <phase duration="21" state="gGGrrrrrrrr"/>
+        <phase duration="3" state="gyyrrrrrrrr"/>
+        <phase duration="2" state="grrrrrrrrrr"/>
+        <phase duration="30" state="grrGGGGGGGr"/>
+        <phase duration="3" state="yrryyyyyyyr"/>
+        <phase duration="2" state="rrrrrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="RS" type="static" programID="daehakro" offset="7">
+        <phase duration="42" state="GGGGGGGr"/>
+        <phase duration="3" state="yyyyyyyr"/>
+        <phase duration="2" state="rrrrrrrr"/>
+        <phase duration="7" state="rrrrrrrG"/>
+        <phase duration="21" state="rrrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="A" type="static" programID="daehakro" offset="5">
+        <phase duration="41" state="ggGGGGrG"/>
+        <phase duration="3" state="yyyyyyrG"/>
+        <phase duration="2" state="rrrrrrrG"/>
+        <phase duration="4" state="rsrrrrrG"/>
+        <phase duration="20" state="rsrrrrgG"/>
+        <phase duration="3" state="rsrrrryG"/>
+        <phase duration="2" state="rsrrrrrG"/>
+    </tlLogic>
+    <tlLogic id="J_NW" type="static" programID="daehakro" offset="0">
+        <phase duration="55" state="GGGGr"/>
+        <phase duration="3" state="yyyyr"/>
+        <phase duration="2" state="rrrrr"/>
+        <phase duration="9" state="rrrrG"/>
+        <phase duration="6" state="rrrrr"/>
+    </tlLogic>
+</additional>

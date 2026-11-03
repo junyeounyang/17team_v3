@@ -1,0 +1,55 @@
+<nodes>
+    <node id="IH" x="0.00" y="0.00" type="traffic_light" radius="8.0"/>
+    <node id="IWJ" x="0.00" y="85.00" type="priority"/>
+    <node id="BAY0" x="0.00" y="165.00" type="priority" radius="4.0"/>
+    <node id="BAY1" x="0.00" y="216.00" type="priority" radius="0.0"/>
+    <node id="M" x="0.00" y="340.00" type="traffic_light"/>
+    <node id="d427" x="0.00" y="427.00" type="priority"/>
+    <node id="O" x="0.00" y="452.00" type="traffic_light" radius="7.0"/>
+    <node id="I" x="0.00" y="506.00" type="traffic_light"/>
+    <node id="H" x="0.00" y="548.00" type="traffic_light"/>
+    <node id="d596" x="0.00" y="596.00" type="priority"/>
+    <node id="G" x="0.00" y="626.00" type="priority"/>
+    <node id="F" x="0.00" y="650.00" type="traffic_light"/>
+    <node id="d688" x="0.00" y="688.00" type="priority"/>
+    <node id="E" x="0.00" y="743.00" type="traffic_light"/>
+    <node id="D" x="0.00" y="765.70" type="traffic_light"/>
+    <node id="d816" x="0.00" y="816.00" type="priority"/>
+    <node id="C_s" x="0.00" y="833.80" type="priority"/>
+    <node id="C" x="0.00" y="850.00" type="traffic_light"/>
+    <node id="B" x="0.00" y="878.00" type="priority"/>
+    <node id="UBAY" x="0.00" y="967.10" type="priority" radius="0.0"/>
+    <node id="A" x="0.00" y="1013.80" type="traffic_light"/>
+    <node id="RS" x="0.00" y="1024.00" type="traffic_light"/>
+    <node id="SB3" x="0.00" y="100.00" type="priority" radius="0.0"/>
+    <node id="SB2" x="0.00" y="130.00" type="priority" radius="4.0"/>
+    <node id="N_end" x="108.30" y="340.00" type="priority"/>
+    <node id="G_end" x="108.30" y="626.00" type="priority"/>
+    <node id="D_end" x="108.30" y="765.70" type="priority"/>
+    <node id="C_end" x="108.30" y="833.80" type="priority"/>
+    <node id="B_end" x="108.30" y="878.00" type="priority"/>
+    <node id="A_end" x="108.30" y="1013.80" type="priority"/>
+    <node id="O_end" x="168.30" y="452.00" type="priority"/>
+    <node id="I_end" x="-101.90" y="506.00" type="priority"/>
+    <node id="SZ_T" x="103.00" y="85.00" type="priority"/>
+    <node id="SZ_end" x="183.00" y="85.00" type="priority"/>
+    <node id="E_branch" x="108.90" y="-8.50" type="priority" radius="6.0"/>
+    <node id="SZ_G" x="37.50" y="85.00" type="priority"/>
+    <node id="SZ_X" x="78.00" y="85.00" type="priority"/>
+    <node id="W_end" x="-200.00" y="-22.00" type="priority"/>
+    <node id="S_end" x="-10.50" y="-150.00" type="priority"/>
+    <node id="E_end" x="198.60" y="-31.00" type="priority"/>
+    <node id="S_mid" x="-4.19" y="-59.85" type="priority"/>
+    <node id="J_NE" x="21.92" y="1107.20" type="traffic_light"/>
+    <node id="J_N" x="2.98" y="1123.09" type="priority"/>
+    <node id="J_NW" x="-23.03" y="1124.45" type="traffic_light"/>
+    <node id="J_mg" x="-42.64" y="1111.71" type="priority" radius="0.0"/>
+    <node id="J_slip" x="-51.13" y="1094.32" type="priority"/>
+    <node id="J_SW" x="-45.92" y="1064.80" type="traffic_light"/>
+    <node id="J_S" x="-13.40" y="1046.02" type="priority"/>
+    <node id="J_SE" x="9.20" y="1052.08" type="priority"/>
+    <node id="SW_end" x="-215.53" y="958.82" type="priority"/>
+    <node id="NE_end" x="208.49" y="1223.78" type="priority"/>
+    <node id="NL_end" x="47.94" y="1234.35" type="priority"/>
+    <node id="NW_end" x="-43.90" y="1272.99" type="priority"/>
+</nodes>

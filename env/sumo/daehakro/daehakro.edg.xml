@@ -1,0 +1,483 @@
+<edges>
+    <edge id="nb_IH_IWJ" from="IH" to="IWJ" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_IWJ_BAY0" from="IWJ" to="BAY0" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_BAY0_BAY1" from="BAY0" to="BAY1" numLanes="6" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus" />
+        <lane index="2" allow="bus" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+        <lane index="5" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_BAY1_M" from="BAY1" to="M" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_M_d427" from="M" to="d427" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_d427_O" from="d427" to="O" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_O_I" from="O" to="I" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_I_H" from="I" to="H" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_H_d596" from="H" to="d596" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_d596_G" from="d596" to="G" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_G_F" from="G" to="F" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_F_d688" from="F" to="d688" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_d688_E" from="d688" to="E" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_E_D" from="E" to="D" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_D_d816" from="D" to="d816" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_d816_C_s" from="d816" to="C_s" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_C_s_C" from="C_s" to="C" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_C_B" from="C" to="B" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_B_UBAY" from="B" to="UBAY" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_UBAY_A" from="UBAY" to="A" numLanes="6" speed="13.89" priority="3" width="3.2" name="대학로" shape="-3.20,967.10 -3.20,1013.80">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+        <lane index="5" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="nb_A_RS" from="A" to="RS" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_SB3_IH" from="SB3" to="IH" numLanes="5" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_SB2_SB3" from="SB2" to="SB3" numLanes="4" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_M_SB2" from="M" to="SB2" numLanes="3" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_O_M" from="O" to="M" numLanes="3" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_I_O" from="I" to="O" numLanes="3" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_H_I" from="H" to="I" numLanes="3" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_F_H" from="F" to="H" numLanes="3" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_E_F" from="E" to="F" numLanes="3" speed="13.89" priority="3" width="3.2" name="대학로" shape="-3.20,743.00 -3.20,698.00 0.00,668.00 0.00,650.00">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_D_E" from="D" to="E" numLanes="3" speed="13.89" priority="3" width="3.2" name="대학로" shape="-3.20,765.70 -3.20,743.00">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_C_D" from="C" to="D" numLanes="4" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_A_C" from="A" to="C" numLanes="4" speed="13.89" priority="3" width="3.2" name="대학로" shape="-3.20,1013.80 -3.20,952.10 0.00,936.10 0.00,850.00">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sb_RS_A" from="RS" to="A" numLanes="4" speed="13.89" priority="3" width="3.2" name="대학로" shape="-3.20,1024.00 -3.20,1013.80">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="N_out" from="M" to="N_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 N">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="N_in" from="N_end" to="M" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 N">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="G_out" from="G" to="G_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 G">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="G_in" from="G_end" to="G" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 G">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="D_out" from="D" to="D_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 D">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="D_in" from="D_end" to="D" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 D">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="C_out" from="C_s" to="C_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 C">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="C_in" from="C_end" to="C_s" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 C">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="B_out" from="B" to="B_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 B">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="B_in" from="B_end" to="B" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 B">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="A_out" from="A" to="A_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 A">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="A_in" from="A_end" to="A" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 A">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="O_out" from="O" to="O_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 O">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="O_in" from="O_end" to="O" numLanes="3" speed="13.89" priority="1" width="3.2" name="옆길 O">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="I_out" from="I" to="I_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 I">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="I_in" from="I_end" to="I" numLanes="2" speed="13.89" priority="1" width="3.2" name="옆길 I">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sz0_out" from="IWJ" to="SZ_G" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sz0_in" from="SZ_G" to="IWJ" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sz1_out" from="SZ_G" to="SZ_X" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sz1_in" from="SZ_X" to="SZ_G" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="szT_out" from="SZ_X" to="SZ_T" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="szT_in" from="SZ_T" to="SZ_X" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sz2_out" from="SZ_T" to="SZ_end" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="sz2_in" from="SZ_end" to="SZ_T" numLanes="2" speed="8.33" priority="2" width="3.2" name="이화장길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="br_out" from="SZ_T" to="E_branch" numLanes="2" speed="8.33" priority="1" width="3.2" name="이화장길 남쪽 골목">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="br_in" from="E_branch" to="SZ_T" numLanes="2" speed="8.33" priority="1" width="3.2" name="이화장길 남쪽 골목">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="W_in" from="W_end" to="IH" numLanes="4" speed="13.89" priority="3" width="3.2" name="율곡로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="W_out" from="IH" to="W_end" numLanes="4" speed="13.89" priority="3" width="3.2" name="율곡로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="E_in2" from="E_end" to="E_branch" numLanes="4" speed="13.89" priority="3" width="3.2" name="율곡로" shape="198.60,-31.00 145.90,-12.40 108.90,-8.50">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="E_in1" from="E_branch" to="IH" numLanes="4" speed="13.89" priority="3" width="3.2" name="율곡로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="E_out" from="IH" to="E_end" numLanes="4" speed="13.89" priority="3" width="3.2" name="율곡로" shape="0.00,0.00 108.90,-8.50 145.90,-12.40 198.60,-31.00">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="S_in0" from="S_end" to="S_mid" numLanes="4" speed="13.89" priority="3" width="3.2" name="대학로">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="S_in" from="S_mid" to="IH" numLanes="4" speed="13.89" priority="3" width="3.2" name="대학로" shape="-4.19,-59.85 3.20,-25.00 3.20,0.00">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" allow="bus passenger taxi" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="S_out" from="IH" to="S_end" numLanes="2" speed="13.89" priority="3" width="3.2" name="대학로" shape="3.20,0.00 3.20,-25.00 -4.19,-59.85 -10.50,-150.00">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcS1" from="J_SW" to="J_S" numLanes="3" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="-41.85,1067.35 -39.89,1064.52 -37.66,1061.90 -35.19,1059.51 -32.49,1057.38 -29.60,1055.52 -26.54,1053.94 -23.34,1052.68 -20.04,1051.73 -16.66,1051.11 -13.23,1050.82" spreadType="right">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcS2" from="J_S" to="J_SE" numLanes="2" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="-13.23,1050.82 -9.75,1050.87 -6.29,1051.27 -2.89,1052.00 0.42,1053.07 3.61,1054.45 6.65,1056.15" spreadType="right">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcE" from="J_SE" to="J_NE" numLanes="5" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="6.65,1056.15 9.67,1058.26 12.45,1060.68 14.96,1063.37 17.18,1066.32 19.08,1069.47 20.64,1072.81 21.84,1076.30 22.67,1079.89 23.11,1083.54 23.18,1087.23 22.86,1090.90 22.15,1094.52 21.08,1098.04 19.64,1101.43 17.85,1104.65" spreadType="right">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" changeLeft="emergency"/>
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcN1" from="J_NE" to="J_N" numLanes="3" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="17.85,1104.65 15.74,1107.67 13.32,1110.45 10.63,1112.96 7.68,1115.18 4.53,1117.08 1.19,1118.64" spreadType="right">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcN2" from="J_N" to="J_NW" numLanes="4" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="1.19,1118.64 -1.96,1119.74 -5.20,1120.54 -8.50,1121.03 -11.82,1121.20 -15.16,1121.06 -18.46,1120.60 -21.70,1119.84" spreadType="right">
+        <lane index="0" allow="bus" />
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcW1" from="J_NW" to="J_mg" numLanes="4" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="-21.70,1119.84 -25.00,1118.71 -28.16,1117.27 -31.17,1115.52 -33.99,1113.48 -36.60,1111.18 -38.96,1108.63" spreadType="right">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcW1b" from="J_mg" to="J_slip" numLanes="3" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="-38.96,1108.63 -41.04,1105.89 -42.85,1102.96 -44.35,1099.87 -45.55,1096.64 -46.43,1093.32" spreadType="right">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="arcW2" from="J_slip" to="J_SW" numLanes="2" speed="13.89" priority="4" width="3.2" name="혜화동로터리" shape="-46.43,1093.32 -46.97,1089.98 -47.19,1086.61 -47.09,1083.24 -46.67,1079.89 -45.92,1076.59 -44.86,1073.39 -43.50,1070.29 -41.85,1067.35" spreadType="right">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="slip1" from="J_slip" to="J_SW" numLanes="2" speed="13.89" priority="2" width="3.2" name="혜화동로터리 우회전" shape="-52.69,1094.65 -54.32,1090.45 -55.50,1086.00 -56.21,1081.35 -56.41,1076.56" spreadType="right">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="dae_nb_in" from="RS" to="J_SE" numLanes="5" speed="13.89" priority="1" width="3.2" name="대학로" shape="0.00,1024.00 0.00,1032.00 6.62,1052.41">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="dae_sb_out" from="J_S" to="RS" numLanes="4" speed="13.89" priority="3" width="3.2" name="대학로" shape="-12.00,1047.60 -3.20,1032.00 -3.20,1024.00">
+        <lane index="0" allow="pedestrian" width="3.50"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="diagNE" from="J_SW" to="J_NE" numLanes="2" speed="13.89" priority="3" width="3.2" name="창경궁로">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="diagSW" from="J_NE" to="J_SW" numLanes="4" speed="13.89" priority="3" width="3.2" name="창경궁로">
+        <lane index="0" disallow="pedestrian bicycle" />
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" allow="bus" />
+    </edge>
+    <edge id="SW_in" from="SW_end" to="J_SW" numLanes="4" speed="13.89" priority="3" width="3.2" name="창경궁로">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="SW_out" from="J_SW" to="SW_end" numLanes="6" speed="13.89" priority="3" width="3.2" name="창경궁로">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+        <lane index="5" allow="bus" />
+    </edge>
+    <edge id="NE_in" from="NE_end" to="J_NE" numLanes="7" speed="13.89" priority="3" width="3.2" name="창경궁로">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+        <lane index="5" disallow="pedestrian bicycle" />
+        <lane index="6" allow="bus" />
+    </edge>
+    <edge id="NE_out" from="J_NE" to="NE_end" numLanes="5" speed="13.89" priority="3" width="3.2" name="창경궁로">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+        <lane index="2" disallow="pedestrian bicycle" />
+        <lane index="3" disallow="pedestrian bicycle" />
+        <lane index="4" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="NL_in" from="NL_end" to="J_N" numLanes="2" speed="13.89" priority="1" width="3.2" name="창경궁로35길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="NL_out" from="J_N" to="NL_end" numLanes="2" speed="13.89" priority="1" width="3.2" name="창경궁로35길">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="NW_in" from="NW_end" to="J_NW" numLanes="2" speed="13.89" priority="2" width="3.2" name="혜화로">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+    <edge id="NW_out" from="J_NW" to="NW_end" numLanes="2" speed="13.89" priority="2" width="3.2" name="혜화로">
+        <lane index="0" allow="pedestrian" width="2.00"/>
+        <lane index="1" disallow="pedestrian bicycle" />
+    </edge>
+</edges>

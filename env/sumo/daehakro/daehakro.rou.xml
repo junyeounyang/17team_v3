@@ -1,0 +1,370 @@
+<routes>
+    <vTypeDistribution id="car">
+        <vType id="car_krauss" probability="0.350" carFollowModel="Krauss" accel="2.6" decel="4.5" tau="1.0" minGap="2.5" color="1,1,0" length="4.6" maxSpeed="22.0" speedFactor="normc(1.0,0.08,0.8,1.15)" vClass="passenger" guiShape="passenger/sedan" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.7" lcSpeedGainRight="0.02" lcKeepRight="0" lcAssertive="1.0" jmStoplineCrossingGap="2.5" jmCrossingGap="15.0" jmTimegapMinor="2.0" jmSigmaMinor="0" jmAdvance="0.0" sigma="0.3"/>
+        <vType id="car_idm" probability="0.300" carFollowModel="IDM" accel="2.0" decel="3.5" tau="1.2" minGap="2.0" color="0,1,1" length="4.6" maxSpeed="22.0" speedFactor="normc(1.0,0.08,0.8,1.15)" vClass="passenger" guiShape="passenger/sedan" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.7" lcSpeedGainRight="0.02" lcKeepRight="0" lcAssertive="1.0" jmStoplineCrossingGap="2.5" jmCrossingGap="15.0" jmTimegapMinor="2.0" jmSigmaMinor="0" jmAdvance="0.0"/>
+        <vType id="car_eidm" probability="0.200" carFollowModel="EIDM" accel="2.2" decel="4.0" tau="1.1" minGap="2.0" color="1,0.6,0" length="4.6" maxSpeed="22.0" speedFactor="normc(1.0,0.08,0.8,1.15)" vClass="passenger" guiShape="passenger/sedan" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.7" lcSpeedGainRight="0.02" lcKeepRight="0" lcAssertive="1.0" jmStoplineCrossingGap="2.5" jmCrossingGap="15.0" jmTimegapMinor="2.0" jmSigmaMinor="0" jmAdvance="0.0"/>
+        <vType id="car_acc" probability="0.150" carFollowModel="ACC" accel="2.0" decel="4.0" tau="1.4" minGap="2.0" color="1,0,1" length="4.6" maxSpeed="22.0" speedFactor="normc(1.0,0.08,0.8,1.15)" vClass="passenger" guiShape="passenger/sedan" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.7" lcSpeedGainRight="0.02" lcKeepRight="0" lcAssertive="1.0" jmStoplineCrossingGap="2.5" jmCrossingGap="15.0" jmTimegapMinor="2.0" jmSigmaMinor="0" jmAdvance="0.0" gapClosingControlGainSpeed="0.5"/>
+    </vTypeDistribution>
+    <vType id="bus" length="11.5" minGap="3.0" maxSpeed="16.7" accel="1.2" decel="4.0" tau="1.2" carFollowModel="Krauss" sigma="0.2" speedFactor="normc(0.95,0.05,0.85,1.05)" vClass="bus" guiShape="bus" color="0.1,0.6,0.2" lcAssertive="1.5" jmStoplineCrossingGap="2.5" jmCrossingGap="15.0" jmTimegapMinor="2.0" jmSigmaMinor="0" jmAdvance="0.0"/>
+    <vType id="parent" vClass="passenger" guiShape="passenger/van" color="1,0.35,0.75" length="4.6" maxSpeed="16.7" accel="2.0" decel="3.0" speedFactor="normc(0.9,0.05,0.8,1.0)" carFollowModel="IDM" tau="1.4" minGap="2.5" lcSpeedGainRight="0.02" lcKeepRight="0" jmStoplineCrossingGap="2.5" jmCrossingGap="15.0" jmTimegapMinor="2.0" jmSigmaMinor="0" jmAdvance="0.0"/>
+    <vType id="ego_type" vClass="passenger" color="1,0,0" accel="2.6" decel="4.5" length="4.6" maxSpeed="22" guiShape="passenger/sedan" jmStoplineCrossingGap="2.5" jmCrossingGap="15.0" jmTimegapMinor="2.0" jmAdvance="0.0"/>
+    <vType id="ped_adult" vClass="pedestrian" guiShape="pedestrian" color="0.25,0.25,0.9" speedFactor="normc(1.0,0.12,0.7,1.3)" width="0.6" length="0.3"/>
+    <vType id="ped_child" vClass="pedestrian" guiShape="pedestrian" color="1,0.45,0.1" speedFactor="normc(0.85,0.12,0.6,1.1)" width="0.45" length="0.25" maxSpeed="1.4"/>
+    <route id="r_W_E" edges="W_in E_out"/>
+    <route id="r_W_S" edges="W_in S_out"/>
+    <route id="r_W_NE" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_W_SW" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_W_NW" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_W_NL" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 NL_out"/>
+    <route id="r_W_SZ" edges="W_in nb_IH_IWJ sz0_out sz1_out szT_out sz2_out"/>
+    <route id="r_W_N" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M N_out"/>
+    <route id="r_W_O" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O O_out"/>
+    <route id="r_W_I" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I I_out"/>
+    <route id="r_W_G" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G G_out"/>
+    <route id="r_W_D" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D D_out"/>
+    <route id="r_W_C" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s C_out"/>
+    <route id="r_W_B" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B B_out"/>
+    <route id="r_W_A" edges="W_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A A_out"/>
+    <route id="r_E_W" edges="E_in2 E_in1 W_out"/>
+    <route id="r_E_S" edges="E_in2 E_in1 S_out"/>
+    <route id="r_E_NE" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_E_SW" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_E_NW" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_E_NL" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 NL_out"/>
+    <route id="r_E_SZ" edges="E_in2 br_in sz2_out"/>
+    <route id="r_E_N" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M N_out"/>
+    <route id="r_E_O" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O O_out"/>
+    <route id="r_E_I" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I I_out"/>
+    <route id="r_E_G" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G G_out"/>
+    <route id="r_E_D" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D D_out"/>
+    <route id="r_E_C" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s C_out"/>
+    <route id="r_E_B" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B B_out"/>
+    <route id="r_E_A" edges="E_in2 E_in1 nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A A_out"/>
+    <route id="r_S_W" edges="S_in0 S_in W_out"/>
+    <route id="r_S_E" edges="S_in0 S_in E_out"/>
+    <route id="r_S_NE" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_S_SW" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_S_NW" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_S_NL" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 NL_out"/>
+    <route id="r_S_SZ" edges="S_in0 S_in nb_IH_IWJ sz0_out sz1_out szT_out sz2_out"/>
+    <route id="r_S_N" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M N_out"/>
+    <route id="r_S_O" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O O_out"/>
+    <route id="r_S_I" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I I_out"/>
+    <route id="r_S_G" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G G_out"/>
+    <route id="r_S_D" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D D_out"/>
+    <route id="r_S_C" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s C_out"/>
+    <route id="r_S_B" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B B_out"/>
+    <route id="r_S_A" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A A_out"/>
+    <route id="r_SW_NE" edges="SW_in diagNE NE_out"/>
+    <route id="r_SW_S" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_SW_W" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_SW_E" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_SW_NW" edges="SW_in arcS1 arcS2 arcE arcN1 arcN2 NW_out"/>
+    <route id="r_SW_I" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I I_out"/>
+    <route id="r_SW_D" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D D_out"/>
+    <route id="r_SW_C" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D nb_D_d816 nb_d816_C_s C_out"/>
+    <route id="r_SW_B" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B B_out"/>
+    <route id="r_SW_O" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O O_out"/>
+    <route id="r_SW_G" edges="SW_in arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G G_out"/>
+    <route id="r_NE_SW" edges="NE_in diagSW SW_out"/>
+    <route id="r_NE_S" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_NE_W" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_NE_E" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_NE_NW" edges="NE_in arcN1 arcN2 NW_out"/>
+    <route id="r_NE_NL" edges="NE_in arcN1 NL_out"/>
+    <route id="r_NE_I" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I I_out"/>
+    <route id="r_NE_D" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D D_out"/>
+    <route id="r_NE_C" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D nb_D_d816 nb_d816_C_s C_out"/>
+    <route id="r_NE_B" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B B_out"/>
+    <route id="r_NE_A" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A A_out"/>
+    <route id="r_NE_N" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M N_out"/>
+    <route id="r_NE_O" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O O_out"/>
+    <route id="r_NE_SZ" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ sz0_out sz1_out szT_out sz2_out"/>
+    <route id="r_NW_SW" edges="NW_in arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_NW_S" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_NW_W" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_NW_E" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_NW_I" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I I_out"/>
+    <route id="r_NW_C" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D nb_D_d816 nb_d816_C_s C_out"/>
+    <route id="r_NW_G" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G G_out"/>
+    <route id="r_NL_SW" edges="NL_in arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_NL_S" edges="NL_in arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_NL_W" edges="NL_in arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_NL_E" edges="NL_in arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_NL_NW" edges="NL_in arcN2 NW_out"/>
+    <route id="r_SZ_NE" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_SZ_SW" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_SZ_NW" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_SZ_NL" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 NL_out"/>
+    <route id="r_SZ_S" edges="sz2_in br_out E_in1 S_out"/>
+    <route id="r_SZ_W" edges="sz2_in br_out E_in1 W_out"/>
+    <route id="r_SZ_N" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M N_out"/>
+    <route id="r_SZ_O" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O O_out"/>
+    <route id="r_N_NE" edges="N_in nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_N_SW" edges="N_in nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_N_S" edges="N_in nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_N_W" edges="N_in nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_N_E" edges="N_in nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_O_NE" edges="O_in nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_O_SW" edges="O_in nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_O_S" edges="O_in sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_O_W" edges="O_in sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_O_E" edges="O_in sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_O_NW" edges="O_in nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_I_S" edges="I_in sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_I_W" edges="I_in sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_I_E" edges="I_in sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_I_NE" edges="I_in sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_G_NE" edges="G_in nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_G_SW" edges="G_in nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_G_NW" edges="G_in nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_G_S" edges="G_in nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_G_W" edges="G_in nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_D_NE" edges="D_in nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_D_SW" edges="D_in nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_D_NW" edges="D_in nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_D_S" edges="D_in nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_D_E" edges="D_in nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_C_NE" edges="C_in nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_C_SW" edges="C_in nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_C_NW" edges="C_in nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_C_S" edges="C_in nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_C_W" edges="C_in nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_B_NE" edges="B_in nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_B_SW" edges="B_in nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_B_NW" edges="B_in nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_B_S" edges="B_in nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_B_E" edges="B_in nb_B_UBAY nb_UBAY_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH E_out"/>
+    <route id="r_A_NE" edges="A_in nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_A_SW" edges="A_in nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_parent_E_n" edges="E_in2 br_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_parent_SZ_n1" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_parent_SZ_n2" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_parent_SZ_n3" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_parent_W_s" edges="W_in nb_IH_IWJ sz0_out sz1_out szT_out sz2_out"/>
+    <route id="r_parent_S_s" edges="S_in0 S_in nb_IH_IWJ sz0_out sz1_out szT_out sz2_out"/>
+    <route id="r_parent_W_s2" edges="W_in nb_IH_IWJ sz0_out sz1_out szT_out br_out E_in1 W_out"/>
+    <route id="r_parent_NE_s" edges="NE_in arcN1 arcN2 arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH nb_IH_IWJ sz0_out sz1_out szT_out sz2_out"/>
+    <route id="r_ego" edges="sz2_in szT_in sz1_in sz0_in nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_bus_nb_to_ne" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE NE_out"/>
+    <route id="r_bus_nb_to_nw" edges="S_in0 S_in nb_IH_IWJ nb_IWJ_BAY0 nb_BAY0_BAY1 nb_BAY1_M nb_M_d427 nb_d427_O nb_O_I nb_I_H nb_H_d596 nb_d596_G nb_G_F nb_F_d688 nb_d688_E nb_E_D nb_D_d816 nb_d816_C_s nb_C_s_C nb_C_B nb_B_UBAY nb_UBAY_A nb_A_RS dae_nb_in arcE arcN1 arcN2 NW_out"/>
+    <route id="r_bus_sb_to_s" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH S_out"/>
+    <route id="r_bus_sb_to_w" edges="NW_in arcW1 arcW1b arcW2 arcS1 dae_sb_out sb_RS_A sb_A_C sb_C_D sb_D_E sb_E_F sb_F_H sb_H_I sb_I_O sb_O_M sb_M_SB2 sb_SB2_SB3 sb_SB3_IH W_out"/>
+    <route id="r_bus_ring_slip_sw" edges="NW_in arcW1 arcW1b slip1 SW_out"/>
+    <route id="r_bus_median_sw" edges="NE_in diagSW SW_out"/>
+    <flow id="car_W_E" type="car" route="r_W_E" begin="0" end="3600" probability="0.15556" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_S" type="car" route="r_W_S" begin="0" end="3600" probability="0.03889" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_NE" type="car" route="r_W_NE" begin="0" end="3600" probability="0.04306" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_SW" type="car" route="r_W_SW" begin="0" end="3600" probability="0.00694" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_NW" type="car" route="r_W_NW" begin="0" end="3600" probability="0.01250" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_NL" type="car" route="r_W_NL" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_SZ" type="car" route="r_W_SZ" begin="0" end="3600" probability="0.00694" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_N" type="car" route="r_W_N" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_O" type="car" route="r_W_O" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_I" type="car" route="r_W_I" begin="0" end="3600" probability="0.00222" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_G" type="car" route="r_W_G" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_D" type="car" route="r_W_D" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_C" type="car" route="r_W_C" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_B" type="car" route="r_W_B" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_W_A" type="car" route="r_W_A" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_W" type="car" route="r_E_W" begin="0" end="3600" probability="0.12500" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_S" type="car" route="r_E_S" begin="0" end="3600" probability="0.03472" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_NE" type="car" route="r_E_NE" begin="0" end="3600" probability="0.05000" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_SW" type="car" route="r_E_SW" begin="0" end="3600" probability="0.00972" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_NW" type="car" route="r_E_NW" begin="0" end="3600" probability="0.01389" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_NL" type="car" route="r_E_NL" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_SZ" type="car" route="r_E_SZ" begin="0" end="3600" probability="0.01667" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_N" type="car" route="r_E_N" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_O" type="car" route="r_E_O" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_I" type="car" route="r_E_I" begin="0" end="3600" probability="0.00222" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_G" type="car" route="r_E_G" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_D" type="car" route="r_E_D" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_C" type="car" route="r_E_C" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_B" type="car" route="r_E_B" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_E_A" type="car" route="r_E_A" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_W" type="car" route="r_S_W" begin="0" end="3600" probability="0.03056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_E" type="car" route="r_S_E" begin="0" end="3600" probability="0.02500" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_NE" type="car" route="r_S_NE" begin="0" end="3600" probability="0.05694" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_SW" type="car" route="r_S_SW" begin="0" end="3600" probability="0.01250" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_NW" type="car" route="r_S_NW" begin="0" end="3600" probability="0.01667" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_NL" type="car" route="r_S_NL" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_SZ" type="car" route="r_S_SZ" begin="0" end="3600" probability="0.00556" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_N" type="car" route="r_S_N" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_O" type="car" route="r_S_O" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_I" type="car" route="r_S_I" begin="0" end="3600" probability="0.00111" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_G" type="car" route="r_S_G" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_D" type="car" route="r_S_D" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_C" type="car" route="r_S_C" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_B" type="car" route="r_S_B" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_S_A" type="car" route="r_S_A" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_NE" type="car" route="r_SW_NE" begin="0" end="3600" probability="0.16667" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_S" type="car" route="r_SW_S" begin="0" end="3600" probability="0.01806" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_W" type="car" route="r_SW_W" begin="0" end="3600" probability="0.02361" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_E" type="car" route="r_SW_E" begin="0" end="3600" probability="0.01528" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_NW" type="car" route="r_SW_NW" begin="0" end="3600" probability="0.02222" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_I" type="car" route="r_SW_I" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_D" type="car" route="r_SW_D" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_C" type="car" route="r_SW_C" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_B" type="car" route="r_SW_B" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_O" type="car" route="r_SW_O" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SW_G" type="car" route="r_SW_G" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_SW" type="car" route="r_NE_SW" begin="0" end="3600" probability="0.17778" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_S" type="car" route="r_NE_S" begin="0" end="3600" probability="0.01667" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_W" type="car" route="r_NE_W" begin="0" end="3600" probability="0.00889" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_E" type="car" route="r_NE_E" begin="0" end="3600" probability="0.01944" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_NW" type="car" route="r_NE_NW" begin="0" end="3600" probability="0.01667" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_NL" type="car" route="r_NE_NL" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_I" type="car" route="r_NE_I" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_D" type="car" route="r_NE_D" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_C" type="car" route="r_NE_C" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_B" type="car" route="r_NE_B" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_A" type="car" route="r_NE_A" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_N" type="car" route="r_NE_N" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_O" type="car" route="r_NE_O" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NE_SZ" type="car" route="r_NE_SZ" begin="0" end="3600" probability="0.00556" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NW_SW" type="car" route="r_NW_SW" begin="0" end="3600" probability="0.02222" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NW_S" type="car" route="r_NW_S" begin="0" end="3600" probability="0.01111" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NW_W" type="car" route="r_NW_W" begin="0" end="3600" probability="0.01667" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NW_E" type="car" route="r_NW_E" begin="0" end="3600" probability="0.00694" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NW_I" type="car" route="r_NW_I" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NW_C" type="car" route="r_NW_C" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NW_G" type="car" route="r_NW_G" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NL_SW" type="car" route="r_NL_SW" begin="0" end="3600" probability="0.00556" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NL_S" type="car" route="r_NL_S" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NL_W" type="car" route="r_NL_W" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NL_E" type="car" route="r_NL_E" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_NL_NW" type="car" route="r_NL_NW" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_NE" type="car" route="r_SZ_NE" begin="0" end="3600" probability="0.00833" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_SW" type="car" route="r_SZ_SW" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_NW" type="car" route="r_SZ_NW" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_NL" type="car" route="r_SZ_NL" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_S" type="car" route="r_SZ_S" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_W" type="car" route="r_SZ_W" begin="0" end="3600" probability="0.00833" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_N" type="car" route="r_SZ_N" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_SZ_O" type="car" route="r_SZ_O" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_N_NE" type="car" route="r_N_NE" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_N_SW" type="car" route="r_N_SW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_N_S" type="car" route="r_N_S" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_N_W" type="car" route="r_N_W" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_N_E" type="car" route="r_N_E" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_O_NE" type="car" route="r_O_NE" begin="0" end="3600" probability="0.00833" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_O_SW" type="car" route="r_O_SW" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_O_S" type="car" route="r_O_S" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_O_W" type="car" route="r_O_W" begin="0" end="3600" probability="0.00694" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_O_E" type="car" route="r_O_E" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_O_NW" type="car" route="r_O_NW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_I_S" type="car" route="r_I_S" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_I_W" type="car" route="r_I_W" begin="0" end="3600" probability="0.00694" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_I_E" type="car" route="r_I_E" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_I_NE" type="car" route="r_I_NE" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_G_NE" type="car" route="r_G_NE" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_G_SW" type="car" route="r_G_SW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_G_NW" type="car" route="r_G_NW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_G_S" type="car" route="r_G_S" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_G_W" type="car" route="r_G_W" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_D_NE" type="car" route="r_D_NE" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_D_SW" type="car" route="r_D_SW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_D_NW" type="car" route="r_D_NW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_D_S" type="car" route="r_D_S" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_D_E" type="car" route="r_D_E" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_C_NE" type="car" route="r_C_NE" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_C_SW" type="car" route="r_C_SW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_C_NW" type="car" route="r_C_NW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_C_S" type="car" route="r_C_S" begin="0" end="3600" probability="0.00278" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_C_W" type="car" route="r_C_W" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_B_NE" type="car" route="r_B_NE" begin="0" end="3600" probability="0.00417" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_B_SW" type="car" route="r_B_SW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_B_NW" type="car" route="r_B_NW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_B_S" type="car" route="r_B_S" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_B_E" type="car" route="r_B_E" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_A_NE" type="car" route="r_A_NE" begin="0" end="3600" probability="0.00694" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="car_A_SW" type="car" route="r_A_SW" begin="0" end="3600" probability="0.00139" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="parent_E_n_40" type="parent" route="r_parent_E_n" begin="0" end="3600" probability="0.00111" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="br_in_1" startPos="8.0" endPos="65.7" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="40" parking="true"/></flow>
+    <flow id="parent_E_n_60" type="parent" route="r_parent_E_n" begin="0" end="3600" probability="0.00111" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="br_in_1" startPos="8.0" endPos="65.7" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="60" parking="true"/></flow>
+    <flow id="parent_E_n_80" type="parent" route="r_parent_E_n" begin="0" end="3600" probability="0.00111" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="br_in_1" startPos="8.0" endPos="65.7" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="80" parking="true"/></flow>
+    <flow id="parent_SZ_n1_40" type="parent" route="r_parent_SZ_n1" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="40" parking="true"/></flow>
+    <flow id="parent_SZ_n1_60" type="parent" route="r_parent_SZ_n1" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="60" parking="true"/></flow>
+    <flow id="parent_SZ_n1_80" type="parent" route="r_parent_SZ_n1" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="80" parking="true"/></flow>
+    <flow id="parent_SZ_n2_40" type="parent" route="r_parent_SZ_n2" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="40" parking="true"/></flow>
+    <flow id="parent_SZ_n2_60" type="parent" route="r_parent_SZ_n2" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="60" parking="true"/></flow>
+    <flow id="parent_SZ_n2_80" type="parent" route="r_parent_SZ_n2" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="80" parking="true"/></flow>
+    <flow id="parent_SZ_n3_40" type="parent" route="r_parent_SZ_n3" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="40" parking="true"/></flow>
+    <flow id="parent_SZ_n3_60" type="parent" route="r_parent_SZ_n3" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="60" parking="true"/></flow>
+    <flow id="parent_SZ_n3_80" type="parent" route="r_parent_SZ_n3" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz2_in_1" startPos="8.0" endPos="72.0" speed="4.2"/><stop lane="szT_in_1" startPos="0.5" endPos="15.9" speed="4.2"/><stop lane="sz1_in_1" startPos="0.5" endPos="2.8" speed="4.2"/><stop parkingArea="pa_gate_n" duration="80" parking="true"/></flow>
+    <flow id="parent_W_s_40" type="parent" route="r_parent_W_s" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="40" parking="true"/></flow>
+    <flow id="parent_W_s_60" type="parent" route="r_parent_W_s" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="60" parking="true"/></flow>
+    <flow id="parent_W_s_80" type="parent" route="r_parent_W_s" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="80" parking="true"/></flow>
+    <flow id="parent_S_s_40" type="parent" route="r_parent_S_s" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="40" parking="true"/></flow>
+    <flow id="parent_S_s_60" type="parent" route="r_parent_S_s" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="60" parking="true"/></flow>
+    <flow id="parent_S_s_80" type="parent" route="r_parent_S_s" begin="0" end="3600" probability="0.00093" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="80" parking="true"/></flow>
+    <flow id="parent_W_s2_40" type="parent" route="r_parent_W_s2" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="40" parking="true"/></flow>
+    <flow id="parent_W_s2_60" type="parent" route="r_parent_W_s2" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="60" parking="true"/></flow>
+    <flow id="parent_W_s2_80" type="parent" route="r_parent_W_s2" begin="0" end="3600" probability="0.00056" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="80" parking="true"/></flow>
+    <flow id="parent_NE_s_40" type="parent" route="r_parent_NE_s" begin="0" end="3600" probability="0.00074" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="40" parking="true"/></flow>
+    <flow id="parent_NE_s_60" type="parent" route="r_parent_NE_s" begin="0" end="3600" probability="0.00074" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="60" parking="true"/></flow>
+    <flow id="parent_NE_s_80" type="parent" route="r_parent_NE_s" begin="0" end="3600" probability="0.00074" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop lane="sz0_out_1" startPos="8.0" endPos="17.4" speed="4.2"/><stop lane="sz1_out_1" startPos="0.5" endPos="2.2" speed="4.2"/><stop parkingArea="pa_gate_s" duration="80" parking="true"/></flow>
+    <flow id="bus_nb_to_ne" type="bus" route="r_bus_nb_to_ne" begin="0" end="3600" probability="0.02444" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop busStop="bs_bay" duration="20"/><stop busStop="bs_nb2" duration="20"/><stop busStop="bs_nb3" duration="20"/><stop busStop="bs_nb4" duration="20"/><stop busStop="bs_nb5" duration="20"/></flow>
+    <flow id="bus_nb_to_nw" type="bus" route="r_bus_nb_to_nw" begin="0" end="3600" probability="0.00806" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop busStop="bs_bay" duration="20"/><stop busStop="bs_nb2" duration="20"/><stop busStop="bs_nb3" duration="20"/><stop busStop="bs_nb4" duration="20"/><stop busStop="bs_nb5" duration="20"/><stop busStop="bs_ring_n" duration="20"/></flow>
+    <flow id="bus_sb_to_s" type="bus" route="r_bus_sb_to_s" begin="0" end="3600" probability="0.00333" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="bus_sb_to_w" type="bus" route="r_bus_sb_to_w" begin="0" end="3600" probability="0.00306" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <flow id="bus_ring_slip_sw" type="bus" route="r_bus_ring_slip_sw" begin="0" end="3600" probability="0.00333" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"><stop busStop="bs_ring_w" duration="20"/></flow>
+    <flow id="bus_median_sw" type="bus" route="r_bus_median_sw" begin="0" end="3600" probability="0.02778" departLane="best" departSpeed="max" departPos="base" arrivalPos="max"/>
+    <personFlow id="ped_x_IH_0" type="ped_adult" begin="0" end="3600" probability="0.03056" departPos="25.0"><walk from="nb_IH_IWJ" to="sb_SB3_IH" arrivalPos="55.1"/></personFlow>
+    <personFlow id="ped_x_IH_1" type="ped_adult" begin="0" end="3600" probability="0.03056" departPos="55.1"><walk from="sb_SB3_IH" to="nb_IH_IWJ" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_IH_E_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="45.8"><walk from="E_in1" to="E_out" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_IH_E_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="25.0"><walk from="E_out" to="E_in1" arrivalPos="45.8"/></personFlow>
+    <personFlow id="ped_x_IH_W_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="153.2"><walk from="W_in" to="W_out" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_IH_W_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="25.0"><walk from="W_out" to="W_in" arrivalPos="153.2"/></personFlow>
+    <personFlow id="ped_x_IH_S_0" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="23.6"><walk from="S_in" to="S_out" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_IH_S_1" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="25.0"><walk from="S_out" to="S_in" arrivalPos="23.6"/></personFlow>
+    <personFlow id="ped_x_M_0" type="ped_adult" begin="0" end="3600" probability="0.04167" departPos="92.3"><walk from="nb_BAY1_M" to="sb_M_SB2" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_M_1" type="ped_adult" begin="0" end="3600" probability="0.04167" departPos="25.0"><walk from="sb_M_SB2" to="nb_BAY1_M" arrivalPos="92.3"/></personFlow>
+    <personFlow id="ped_x_K_0" type="ped_adult" begin="0" end="3600" probability="0.03472" departPos="25.0"><walk from="nb_O_I" to="sb_I_O" arrivalPos="6.9"/></personFlow>
+    <personFlow id="ped_x_K_1" type="ped_adult" begin="0" end="3600" probability="0.03472" departPos="6.9"><walk from="sb_I_O" to="nb_O_I" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_H_0" type="ped_adult" begin="0" end="3600" probability="0.04167" departPos="7.8"><walk from="nb_I_H" to="sb_H_I" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_H_1" type="ped_adult" begin="0" end="3600" probability="0.04167" departPos="25.0"><walk from="sb_H_I" to="nb_I_H" arrivalPos="7.8"/></personFlow>
+    <personFlow id="ped_x_F_0" type="ped_adult" begin="0" end="3600" probability="0.05556" departPos="0.5"><walk from="nb_G_F" to="sb_F_H" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_F_1" type="ped_adult" begin="0" end="3600" probability="0.05556" departPos="25.0"><walk from="sb_F_H" to="nb_G_F" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_x_E_0" type="ped_adult" begin="0" end="3600" probability="0.08333" departPos="15.0"><walk from="nb_d688_E" to="sb_E_F" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_E_1" type="ped_adult" begin="0" end="3600" probability="0.08333" departPos="25.0"><walk from="sb_E_F" to="nb_d688_E" arrivalPos="15.0"/></personFlow>
+    <personFlow id="ped_x_C_0" type="ped_adult" begin="0" end="3600" probability="0.04167" departPos="0.5"><walk from="nb_C_s_C" to="sb_C_D" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_x_C_1" type="ped_adult" begin="0" end="3600" probability="0.04167" departPos="25.0"><walk from="sb_C_D" to="nb_C_s_C" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_x_RS_0" type="ped_adult" begin="0" end="3600" probability="0.03472" departPos="0.5"><walk from="nb_A_RS" to="sb_RS_A" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_x_RS_1" type="ped_adult" begin="0" end="3600" probability="0.03472" departPos="0.5"><walk from="sb_RS_A" to="nb_A_RS" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_s_N_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="92.3"><walk from="nb_BAY1_M" to="nb_M_d427" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_s_N_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="25.0"><walk from="nb_M_d427" to="nb_BAY1_M" arrivalPos="92.3"/></personFlow>
+    <personFlow id="ped_s_O_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="0.5"><walk from="nb_d427_O" to="nb_O_I" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_s_O_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="25.0"><walk from="nb_O_I" to="nb_d427_O" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_s_G_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="0.5"><walk from="nb_d596_G" to="nb_G_F" arrivalPos="14.3"/></personFlow>
+    <personFlow id="ped_s_G_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="14.3"><walk from="nb_G_F" to="nb_d596_G" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_s_D_0" type="ped_adult" begin="0" end="3600" probability="0.02778" departPos="0.5"><walk from="nb_E_D" to="nb_D_d816" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_s_D_1" type="ped_adult" begin="0" end="3600" probability="0.02778" departPos="25.0"><walk from="nb_D_d816" to="nb_E_D" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_s_C_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="0.5"><walk from="nb_d816_C_s" to="nb_C_s_C" arrivalPos="6.5"/></personFlow>
+    <personFlow id="ped_s_C_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="6.5"><walk from="nb_C_s_C" to="nb_d816_C_s" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_s_B_0" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="0.5"><walk from="nb_C_B" to="nb_B_UBAY" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_s_B_1" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="25.0"><walk from="nb_B_UBAY" to="nb_C_B" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_s_A_0" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="15.0"><walk from="nb_UBAY_A" to="nb_A_RS" arrivalPos="0.5"/></personFlow>
+    <personFlow id="ped_s_A_1" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="0.5"><walk from="nb_A_RS" to="nb_UBAY_A" arrivalPos="15.0"/></personFlow>
+    <personFlow id="ped_s_I_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="7.8"><walk from="sb_H_I" to="sb_I_O" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_s_I_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="25.0"><walk from="sb_I_O" to="sb_H_I" arrivalPos="7.8"/></personFlow>
+    <personFlow id="ped_s_IWJ_0" type="ped_adult" begin="0" end="3600" probability="0.00833" departPos="33.4"><walk from="nb_IH_IWJ" to="nb_IWJ_BAY0" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_s_IWJ_1" type="ped_adult" begin="0" end="3600" probability="0.00833" departPos="25.0"><walk from="nb_IWJ_BAY0" to="nb_IH_IWJ" arrivalPos="33.4"/></personFlow>
+    <personFlow id="ped_z_T_0" type="ped_child" begin="0" end="3600" probability="0.01042" departPos="22.0"><walk from="sz1_out" to="sz1_in" arrivalPos="15.0"/></personFlow>
+    <personFlow id="ped_z_T_1" type="ped_child" begin="0" end="3600" probability="0.01042" departPos="15.0"><walk from="sz1_in" to="sz1_out" arrivalPos="22.0"/></personFlow>
+    <personFlow id="ped_z_T_2" type="ped_child" begin="0" end="3600" probability="0.01042" departPos="36.2"><walk from="br_in" to="sz1_in" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_z_T_3" type="ped_child" begin="0" end="3600" probability="0.01042" departPos="25.0"><walk from="sz1_in" to="br_in" arrivalPos="36.2"/></personFlow>
+    <personFlow id="ped_r_NE_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="184.2"><walk from="NE_in" to="NE_out" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_r_NE_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="25.0"><walk from="NE_out" to="NE_in" arrivalPos="184.2"/></personFlow>
+    <personFlow id="ped_r_SW_0" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="165.9"><walk from="SW_in" to="SW_out" arrivalPos="25.0"/></personFlow>
+    <personFlow id="ped_r_SW_1" type="ped_adult" begin="0" end="3600" probability="0.02083" departPos="25.0"><walk from="SW_out" to="SW_in" arrivalPos="165.9"/></personFlow>
+    <personFlow id="ped_r_NW_0" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="119.7"><walk from="NW_in" to="NW_out" arrivalPos="20.0"/></personFlow>
+    <personFlow id="ped_r_NW_1" type="ped_adult" begin="0" end="3600" probability="0.01667" departPos="20.0"><walk from="NW_out" to="NW_in" arrivalPos="119.7"/></personFlow>
+    <personFlow id="ped_r_NL_0" type="ped_adult" begin="0" end="3600" probability="0.01111" departPos="90.5"><walk from="NL_in" to="NL_out" arrivalPos="20.0"/></personFlow>
+    <personFlow id="ped_r_NL_1" type="ped_adult" begin="0" end="3600" probability="0.01111" departPos="20.0"><walk from="NL_out" to="NL_in" arrivalPos="90.5"/></personFlow>
+    <personFlow id="ped_g_W" type="ped_child" begin="0" end="3600" probability="0.01944" departPos="36.0"><walk from="sz1_in" to="W_out" arrivalPos="40.0"/></personFlow>
+    <personFlow id="ped_g_S" type="ped_child" begin="0" end="3600" probability="0.01944" departPos="36.0"><walk from="sz1_in" to="S_out" arrivalPos="40.0"/></personFlow>
+    <personFlow id="ped_g_N" type="ped_child" begin="0" end="3600" probability="0.03333" departPos="36.0"><walk from="sz1_in" to="nb_BAY1_M" arrivalPos="58.6"/></personFlow>
+    <personFlow id="ped_g_E" type="ped_child" begin="0" end="3600" probability="0.02500" departPos="36.0"><walk from="sz1_in" to="br_out" arrivalPos="58.2"/></personFlow>
+    <personFlow id="ped_g_SZ" type="ped_child" begin="0" end="3600" probability="0.02500" departPos="36.0"><walk from="sz1_in" to="sz2_in" arrivalPos="5.0"/></personFlow>
+    <personFlow id="ped_g_X" type="ped_child" begin="0" end="3600" probability="0.01667" departPos="36.0"><walk from="sz1_in" to="sz1_out" arrivalPos="18.5"/></personFlow>
+</routes>
